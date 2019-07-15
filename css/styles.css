@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%; /* this will be 16px on most browsers */
+  line-height: 1.5; /* this is a multiple of the font size (1.5 * 16px = 24px) */
+}
+
+body {
+  margin: 0;
+}
+
+/* The container article. */
+.film {
+  margin: 40px auto 50px;
+  padding: 40px 0 0 40px;
+  position: relative;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border: 1px solid #eee;
+  align-items: start;
+}
+
+/* The figure that contains the img, action-watch-later div, and fa-clock-o i. */
+.film-poster {
+  margin: 0;
+  padding-bottom: 20px;
+  position: relative;
+  height: 100%;
+  text-align: right;
+}
+
+img {
+  max-width: 100%;
+  max-height: 500px;
+}
+
+/* Contains the fa-clock-o i. */
+.action-watch-later {
+  top: 12px;
+  right: -4px;
+  position: absolute;
+}
+
+.fa-clock-o {
+  bottom: 8px;
+  right: 8px;
+  position: relative;
+  color: #F00;
+}
+
+/* Contains the film-title h1, film-description p, and action-like div. */
+.film-details {
+  margin-left: 20px;
+  padding: 0;
+  position: relative;
+  height: 100%;
+  font-size: 28px;
+}
+
+.film-title {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+.film-description {
+  margin: 0;
+  padding: 0 40px 50px 0;
+  display: inline-block;
+  font-size: .8em;
+}
+
+.action-like {
+  bottom: 8px;
+  right: 8px;
+  position: absolute;
+  color: red;
+}
